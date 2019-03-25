@@ -89,7 +89,12 @@ const crazyObject = {
 // Use crazyObject to log the following.
 
 // "omg my mouth is burning"
+console.log(crazyObject.taco[1].salsa[5]);
 // "Pretty pretty prettayyyyy good"
+console.log(crazyObject.larry.quotes[0]);
 // "Swearing at Larry and Jeff"
+console.log(crazyObject.larry.characters[2].favourtieHobby);
 // "Chicken Teriyaki Boyyyyyy"
+console.log(crazyObject.larry.nicknames[1]);
 // The object the contains the name funkhauser
+console.log(crazyObject.larry.characters[1]);
