@@ -154,13 +154,24 @@ for (let i = 0; i < bondFilms.length; i++) {
     bondTitles.push(bondFilms[i].title)
 } console.log(bondTitles);
 //   🔴 Commit: "bondTitles array"
-
 // Create a new array oddBonds, of only the Bond films released on odd-numbered years.
 // 🔴 Commit: "oddBonds"
+let oddBonds = [];
+for (let i = 0; i < bondFilms.length; i++) {
+    if (bondFilms[i].year % 2 !== 0) {
+        oddBonds.push(bondFilms[i].title);
+    }   
+} console.log(oddBonds);
 
 // Determine the total cumulative gross of the Bond franchise, and console.log the result.
-// Hint: To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). Look into parseInt() also.
-
+// Hint: To make the grosses into usable numbers, 
+// look into the .replace Javascript method (there are many ways to do this, however). 
+// Look into parseInt() also.
+let sum = 0;
+for (let i = 0; i < bondFilms.length; i++) {
+    sum += parseInt(bondFilms[i].gross.split(',').join('').replace("$",""));
+};
+console.log(sum);
 // 🔴 Commit: "bond films gross"
 
 // Congrats! You have completed the homework
